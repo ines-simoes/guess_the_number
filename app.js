@@ -1,5 +1,5 @@
 let generatedNumbers = [];
-let higherNumber = 10;
+let higherNumber = 100;
 let secretNumber = createRandomNumber();
 let attempts = 1;
 
@@ -33,7 +33,7 @@ function verifyGuess() {
     }
 
     else {
-        alert(`Attention. Choose a number between 1 and ${higherNumber}.`);
+        showTextOnScreen('p', `Attention. The chosen number has to be between 1 and ${higherNumber}.`);
     }
 }
 
